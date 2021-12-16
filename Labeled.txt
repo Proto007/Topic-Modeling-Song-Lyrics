@@ -1,0 +1,35 @@
+lyrics_alabama_thecloseryouget.txt - Topic 5 ,  Topic 21 , Topic 23
+lyrics_alabama_rolloneighteenwheeler.txt - Topic 1 , Topic 6 , Topic 7
+lyrics_alabama_iwannabethere.txt - Topic 4 , Topic 5 , Topic 8
+lyrics_alabama_illflyaway.txt - Topic 8 ,Topic 21 ,Topic 0
+lyrics_alabama_iamthemanthomas.txt - Topic 0 , Topic 10 , Topic 22
+lyrics_alabama_highcotton.txt - Topic 9, Topic 10, Topic 15
+lyrics_alabama_godmusthavespentalittlemoretimeonyou.txt - Topic 19 , Topic 0, Topic 3
+lyrics_alabama_christmasindixie.txt - Topic 0 , Topic 19 , Topic 9
+lyrics_arianagrande_bloodline.txt - Topic 19, Topic 21 , Topic 0
+lyrics_arianagrande_dangerouswoman.txt - Topic 5, Topic 21, Topic 12
+lyrics_arianagrande_fakesmile.txt - Topic 11 , Topic 9 , Topic 21
+lyrics_arianagrande_ghostin.txt - Topic 1, Topic 21, Topic 5
+lyrics_arianagrande_goodnightngo.txt - Topic 12, Topic 11, Topic 21
+lyrics_arianagrande_sweetener.txt - Topic 5 ,Topic 8 ,Topic 15 
+lyrics_arianagrande_r.e.m..txt - Topic 3, Topic 6 ,Topic 22 
+lyrics_arianagrande_petedavidson.txt - Topic 11 , Topic 10 , Topic 16
+lyrics_arianagrande_onelasttime.txt - Topic 4 , Topic 8 , Topic 12
+lyrics_arianagrande_needy.txt-Topic 12 , Topic 1 , Topic 15
+lyrics_arianagrande_nasa.txt- Topic 10 , Topic 3 , Topic 17
+lyrics_arianagrande_letmeloveyou.txt-Topic 12 , Topic 21 , Topic 19
+lyrics_audioslave_1zero.txt - Topic 13, Topic 20, Topic 6
+lyrics_audioslave_dandelion.txt - Topic 4 , Topic 18 , Topic 16 
+lyrics_audioslave_heavensdead.txt - Topic 20 ,Topic 8, Topic 10
+lyrics_audioslave_hypnotize.txt - Topic 4, Topic 2, Topic 11
+lyrics_audioslave_lightmyway.txt - Topic 19 ,Topic 6 , Topic 8
+lyrics_audioslave_moth.txt - Topic 1 , Topic 20 , Topic 10
+lyrics_audioslave_outofexile.txt -  Topic 19, Topic 8, Topic 12
+lyrics_audioslave_revelations.txt - Topic 20, Topic 8, Topic 9
+lyrics_audioslave_yourtimehascome.txt - Topic 21, Topic 19, Topic 17
+lyrics_audioslave_yesterdaytotomorrow.txt - Topic 11, Topic 7, Topic 20 
+lyrics_audioslave_wideawake.txt - Topic 8, Topic 15, Topic 4
+lyrics_audioslave_setitoff.txt - Topic 9, Topic 14, Topic 17
+lyrics_audioslave_thecurse.txt - Topic 9, Topic 7, Topic 3 
+lyrics_audioslave_thelastremaininglight.txt - Topic 4 , Topic 11, Topic 8
+lyrics_audioslave_shapeofthingstocome.txt -  Topic 18, Topic 8, Topic 7
