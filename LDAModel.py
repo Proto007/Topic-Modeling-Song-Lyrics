@@ -16,7 +16,16 @@ from gensim.models import CoherenceModel # import for coherence model
 #returns corpus usable by lda model
 def GetCorpus(id2word,songs_list):
   corpus = [id2word.doc2bow(song) for song in songs_list]
+  if(not os.path.exists("Saved Corpus")):
+    os.mkdir("Saved Corpus")
+  corpora.MmCorpus.serialize(os.getcwd()+"/Saved Corpus/Corpus",corpus)
   return corpus
+
+def LoadCorpus():
+  try:
+    return corpora.MmCorpus(os.getcwd()+"/Saved Corpus/Corpus")
+  except:
+    print("File not found.")
 
 #Takes a list of bag of words for each song and makes a dictionary using gensim's id2word
 #Each word is provided its unique id
@@ -28,8 +37,17 @@ def GetDictionary(songs_list,filter_words):
   id2word = corpora.Dictionary(songs_list) # make dictionary for model
   if filter_words:
     #filter words based on their document frequency
-    id2word.filter_extremes(no_below=10, no_above=0.6, keep_tokens=None)
+    id2word.filter_extremes(no_below=3, no_above=0.7, keep_tokens=None)
+  if(not os.path.exists("Saved Dictionary")):
+    os.mkdir("Saved Dictionary")
+  id2word.save(os.getcwd()+"/Saved Dictionary/Dictionary")
   return id2word
+
+def LoadDictionary():
+  try:
+    return corpora.Dictionary.load(os.getcwd()+"/Saved Dictionary/Dictionary")
+  except:
+    print("File not found.")
 
 #Makes an LDA model with provided corpora_folder_name, num_of_topics to generate and min_words in each corpus
 #Calls functions previously defined to create corpus, dictionary and bag of words list for the model
@@ -38,14 +56,18 @@ def GetDictionary(songs_list,filter_words):
 #@min_words is an integer greater than 0
 #@filter_words is a bool to decide whether words are filtered based on frequency
 #returns an LDA model with @num_of_topics topics
-def MakeLdaModel(corpora_folder,num_of_topics,min_words,filter_words):
-  songs_list=dp.ReadFolder(corpora_folder,min_words)
-  id2word=GetDictionary(songs_list,filter_words)
-  corpus=GetCorpus(id2word,songs_list)
+def MakeLdaModel(corpora_folder,is_saved,num_of_topics,min_words,filter_words,Bigrams):
+  if(is_saved):
+    id2word=LoadDictionary()
+    corpus=LoadCorpus()
+  else:
+    songs_list=dp.ReadFolder(corpora_folder,min_words,Bigrams)
+    id2word=GetDictionary(songs_list,filter_words)
+    corpus=GetCorpus(id2word,songs_list)    
   lda_model = ldamodel.LdaModel( corpus = corpus, id2word = id2word,
                                  num_topics = num_of_topics, random_state = 100,
                                  update_every = 1, passes = 10,
-                                 alpha = 'auto', per_word_topics = False)  
+                                 alpha = 'auto', per_word_topics = True)  
   return lda_model
 
 #Save an LDA model in current_working_directory/Saved Models/@name_of_model/

@@ -1,35 +1,250 @@
-lyrics_alabama_thecloseryouget.txt - Topic 5 ,  Topic 21 , Topic 23
-lyrics_alabama_rolloneighteenwheeler.txt - Topic 1 , Topic 6 , Topic 7
-lyrics_alabama_iwannabethere.txt - Topic 4 , Topic 5 , Topic 8
-lyrics_alabama_illflyaway.txt - Topic 8 ,Topic 21 ,Topic 0
-lyrics_alabama_iamthemanthomas.txt - Topic 0 , Topic 10 , Topic 22
-lyrics_alabama_highcotton.txt - Topic 9, Topic 10, Topic 15
-lyrics_alabama_godmusthavespentalittlemoretimeonyou.txt - Topic 19 , Topic 0, Topic 3
-lyrics_alabama_christmasindixie.txt - Topic 0 , Topic 19 , Topic 9
-lyrics_arianagrande_bloodline.txt - Topic 19, Topic 21 , Topic 0
-lyrics_arianagrande_dangerouswoman.txt - Topic 5, Topic 21, Topic 12
-lyrics_arianagrande_fakesmile.txt - Topic 11 , Topic 9 , Topic 21
-lyrics_arianagrande_ghostin.txt - Topic 1, Topic 21, Topic 5
-lyrics_arianagrande_goodnightngo.txt - Topic 12, Topic 11, Topic 21
-lyrics_arianagrande_sweetener.txt - Topic 5 ,Topic 8 ,Topic 15 
-lyrics_arianagrande_r.e.m..txt - Topic 3, Topic 6 ,Topic 22 
-lyrics_arianagrande_petedavidson.txt - Topic 11 , Topic 10 , Topic 16
-lyrics_arianagrande_onelasttime.txt - Topic 4 , Topic 8 , Topic 12
-lyrics_arianagrande_needy.txt-Topic 12 , Topic 1 , Topic 15
-lyrics_arianagrande_nasa.txt- Topic 10 , Topic 3 , Topic 17
-lyrics_arianagrande_letmeloveyou.txt-Topic 12 , Topic 21 , Topic 19
-lyrics_audioslave_1zero.txt - Topic 13, Topic 20, Topic 6
-lyrics_audioslave_dandelion.txt - Topic 4 , Topic 18 , Topic 16 
-lyrics_audioslave_heavensdead.txt - Topic 20 ,Topic 8, Topic 10
-lyrics_audioslave_hypnotize.txt - Topic 4, Topic 2, Topic 11
-lyrics_audioslave_lightmyway.txt - Topic 19 ,Topic 6 , Topic 8
-lyrics_audioslave_moth.txt - Topic 1 , Topic 20 , Topic 10
-lyrics_audioslave_outofexile.txt -  Topic 19, Topic 8, Topic 12
-lyrics_audioslave_revelations.txt - Topic 20, Topic 8, Topic 9
-lyrics_audioslave_yourtimehascome.txt - Topic 21, Topic 19, Topic 17
-lyrics_audioslave_yesterdaytotomorrow.txt - Topic 11, Topic 7, Topic 20 
-lyrics_audioslave_wideawake.txt - Topic 8, Topic 15, Topic 4
-lyrics_audioslave_setitoff.txt - Topic 9, Topic 14, Topic 17
-lyrics_audioslave_thecurse.txt - Topic 9, Topic 7, Topic 3 
-lyrics_audioslave_thelastremaininglight.txt - Topic 4 , Topic 11, Topic 8
-lyrics_audioslave_shapeofthingstocome.txt -  Topic 18, Topic 8, Topic 7
+0b0BSZ084wya7hqk.txt - Topic ,Topic ,Topic 
+0B2bXOAXyevoV57H.txt - Topic ,Topic ,Topic 
+0b3wV9stbRCvHNHE.txt - Topic ,Topic ,Topic 
+0b4sh05wi1S3WKKd.txt - Topic ,Topic ,Topic 
+0b5EYkNDKomeztzL.txt - Topic ,Topic ,Topic 
+0b6sYk8GBxAjtTms.txt - Topic ,Topic ,Topic 
+0b7cvPffQAinCFmX.txt - Topic ,Topic ,Topic 
+0b9YMMUoEIJrHXoQ.txt - Topic ,Topic ,Topic 
+FPOD0IPwrHzyhsTQ.txt - Topic ,Topic ,Topic 
+fpOMtLemgIXO959m.txt - Topic ,Topic ,Topic 
+FPpL5N6YMIBe4I4e.txt - Topic ,Topic ,Topic 
+fpq0npep55Jh27wt.txt - Topic ,Topic ,Topic 
+fPQ4XNpIVA3KpNCV.txt - Topic ,Topic ,Topic 
+Fpqdi4CDa5Q0Odrz.txt - Topic ,Topic ,Topic 
+FPqjediKtwhPwUJE.txt - Topic ,Topic ,Topic 
+FPQPeAxjlzaF8ZHT.txt - Topic ,Topic ,Topic 
+FPqVOlFz5cvCJsRe.txt - Topic ,Topic ,Topic 
+fpRBstXrRkPz2Gjc.txt - Topic ,Topic ,Topic 
+fPReNspdL8f4y20H.txt - Topic ,Topic ,Topic 
+fPrRo1yikU4rVOED.txt - Topic ,Topic ,Topic 
+FPS6XlTSK47Ju1YF.txt - Topic ,Topic ,Topic 
+fPsHJeHxjZPsALmb.txt - Topic ,Topic ,Topic 
+FpSHrgYPnwJvVuZE.txt - Topic ,Topic ,Topic 
+fpslRVnT2Rsqk6FX.txt - Topic ,Topic ,Topic 
+fpspvnC1jELCCN1C.txt - Topic ,Topic ,Topic 
+FpsUE5iF0TE6Ny0M.txt - Topic ,Topic ,Topic 
+FpsvT5Oi1BwvRHEs.txt - Topic ,Topic ,Topic 
+FPtPv1IlXxOm95SH.txt - Topic ,Topic ,Topic 
+fPTRTrP7VOtIRLGt.txt - Topic ,Topic ,Topic 
+fptVtRzccHP0JKAE.txt - Topic ,Topic ,Topic 
+fpu0RjQIgOrQmhOG.txt - Topic ,Topic ,Topic 
+fpuzqsGW38fL5Kv4.txt - Topic ,Topic ,Topic 
+fpvBWAFqhWeHvSGi.txt - Topic ,Topic ,Topic 
+FpvVFUDM3OqlZcep.txt - Topic ,Topic ,Topic 
+FPvXGz96cAuP1P6B.txt - Topic ,Topic ,Topic 
+fpVXKH4dFUuVSvm6.txt - Topic ,Topic ,Topic 
+fPw8AGa8IprloNyb.txt - Topic ,Topic ,Topic 
+FpwlbVDKz6H7WLgt.txt - Topic ,Topic ,Topic 
+FPwqdlIPjE35RMFX.txt - Topic ,Topic ,Topic 
+fpx2ZSTLumIXkuIA.txt - Topic ,Topic ,Topic 
+FPX3RJUSzW1ee0Pd.txt - Topic ,Topic ,Topic 
+FPYDJ51BRuS13YUd.txt - Topic ,Topic ,Topic 
+FpYLiDDV02zqRQmx.txt - Topic ,Topic ,Topic 
+fPYzK8yEYuy3thcS.txt - Topic ,Topic ,Topic 
+FPz786aN5H0ZJlTC.txt - Topic ,Topic ,Topic 
+FpZcpER4fHH06CIG.txt - Topic ,Topic ,Topic 
+FpzEz2hHUU53zMIS.txt - Topic ,Topic ,Topic 
+FQ0C1uvFMVeYJddN.txt - Topic ,Topic ,Topic 
+Fq0GmFCQ6rH8fhGw.txt - Topic ,Topic ,Topic 
+Fq0HYcadYXdSa0nu.txt - Topic ,Topic ,Topic 
+fq0SPkSPkNkBlkxA.txt - Topic ,Topic ,Topic 
+fQ0yzGnmVfy05xRO.txt - Topic ,Topic ,Topic 
+FQ0ZHCq0JesoAJUh.txt - Topic ,Topic ,Topic 
+Fq1qvmAe96PYJiSM.txt - Topic ,Topic ,Topic 
+FQ4C6baPofyQtkEW.txt - Topic ,Topic ,Topic 
+fQ4pS4dDpMn8EYDI.txt - Topic ,Topic ,Topic 
+FQ5by6eGYhVtc3mZ.txt - Topic ,Topic ,Topic 
+fQ5WKGQFoMS8IJe8.txt - Topic ,Topic ,Topic 
+Fq6893EVCjO2JGfu.txt - Topic ,Topic ,Topic 
+Fq6cR1z6QBSxUrm3.txt - Topic ,Topic ,Topic 
+Fq7Hqe4Veg49DruU.txt - Topic ,Topic ,Topic 
+FQ9l5OSQAH1Eu5sD.txt - Topic ,Topic ,Topic 
+FQaDVN7CXGepKejz.txt - Topic ,Topic ,Topic 
+fqb4FkWfkRj75FqV.txt - Topic ,Topic ,Topic 
+FQbcF1YqUQIcKetL.txt - Topic ,Topic ,Topic 
+FqbHovLSH4T2rrEq.txt - Topic ,Topic ,Topic 
+FQBKFiAW9GiZN6yH.txt - Topic ,Topic ,Topic 
+fQbm65nkJ2lNTFlI.txt - Topic ,Topic ,Topic 
+fqBPBqdHUyap5WO5.txt - Topic ,Topic ,Topic 
+FqbvnvFxD5puhqKm.txt - Topic ,Topic ,Topic 
+FQbZSxT5jVAiWmu8.txt - Topic ,Topic ,Topic 
+fQcKATcMDnJhQ5D6.txt - Topic ,Topic ,Topic 
+fQCLAtsdt400PYU8.txt - Topic ,Topic ,Topic 
+fqCnCVkzw3XTMAEl.txt - Topic ,Topic ,Topic 
+fQcXl5oM3LecUQAM.txt - Topic ,Topic ,Topic 
+fqdqn65iYblvQBxC.txt - Topic ,Topic ,Topic 
+FQEHIuvexvCroOMA.txt - Topic ,Topic ,Topic 
+FqFe65Yqy093PHdD.txt - Topic ,Topic ,Topic 
+fQFMlHR4Ia3ZePUc.txt - Topic ,Topic ,Topic 
+FQFXHkRRJUX1lpKn.txt - Topic ,Topic ,Topic 
+FQGMy5orGpRiahCv.txt - Topic ,Topic ,Topic 
+fqGo3j5UJcJl7BDZ.txt - Topic ,Topic ,Topic 
+fQH8PPpsV674iek1.txt - Topic ,Topic ,Topic 
+fqHgyKeWLKHt1W3U.txt - Topic ,Topic ,Topic 
+fQjkjWP8UmIwJfmw.txt - Topic ,Topic ,Topic 
+FQjPm0z8ocv1u63k.txt - Topic ,Topic ,Topic 
+Fqk1FWc8yz7449OI.txt - Topic ,Topic ,Topic 
+Fqk6k6Mmi40DfyvT.txt - Topic ,Topic ,Topic 
+FqKtcOyEhk156Wjt.txt - Topic ,Topic ,Topic 
+FQKTvCKtYpqWzxWj.txt - Topic ,Topic ,Topic 
+FqkVkLcTLEr8YKDd.txt - Topic ,Topic ,Topic 
+FqlYcgTpnGgXrR00.txt - Topic ,Topic ,Topic 
+FQmIQEy9cjzyVngf.txt - Topic ,Topic ,Topic 
+fqMrss7xuYDmEzZE.txt - Topic ,Topic ,Topic 
+fqNFSJko43UzTHrz.txt - Topic ,Topic ,Topic 
+fQNjWCvmXaPytHEq.txt - Topic ,Topic ,Topic 
+FqNQeQ0oW86J7mXn.txt - Topic ,Topic ,Topic 
+FqOevBjJEpkaP6Uf.txt - Topic ,Topic ,Topic 
+FqoLwE9pXVu1kSb6.txt - Topic ,Topic ,Topic 
+fQOTMRE5HFhLWzfG.txt - Topic ,Topic ,Topic 
+fqotTYeTLpnRj3lF.txt - Topic ,Topic ,Topic 
+fqOw6YXrjDhkoYzE.txt - Topic ,Topic ,Topic 
+FQpRMvgepbCcHXuw.txt - Topic ,Topic ,Topic 
+FqpW85CaBLDDoXh7.txt - Topic ,Topic ,Topic 
+FQpX9d0NR0Ohy1M1.txt - Topic ,Topic ,Topic 
+FqQCNzPDAGmXaCSN.txt - Topic ,Topic ,Topic 
+fQr6rK7BNhpGkvpU.txt - Topic ,Topic ,Topic 
+fQrmEm90xsPF283O.txt - Topic ,Topic ,Topic 
+fqrN4svGI9IyKjqj.txt - Topic ,Topic ,Topic 
+fqRphjrDbmNJrjrg.txt - Topic ,Topic ,Topic 
+FQrXM5bajDcNYTmv.txt - Topic ,Topic ,Topic 
+fqrZZeIs52mpe4hQ.txt - Topic ,Topic ,Topic 
+FQs0gH1ZmGLPm0eH.txt - Topic ,Topic ,Topic 
+Fqshj3MSNtIkzEVH.txt - Topic ,Topic ,Topic 
+fqSiJ2TfAyuIxjc0.txt - Topic ,Topic ,Topic 
+fQSKr8eST4Aja4PW.txt - Topic ,Topic ,Topic 
+fQTdBzQ27CVPyih9.txt - Topic ,Topic ,Topic 
+fQTVQgws4RqgVJC3.txt - Topic ,Topic ,Topic 
+fQTZ7nOrICndZiMu.txt - Topic ,Topic ,Topic 
+Fqu7bJouZILXYIUH.txt - Topic ,Topic ,Topic 
+FQuSKuVJGda6AnSj.txt - Topic ,Topic ,Topic 
+FqvC9Ojrk3XSCYgB.txt - Topic ,Topic ,Topic 
+fqvEgwapRUre9ldH.txt - Topic ,Topic ,Topic 
+fqVgf21XXw0fEWv5.txt - Topic ,Topic ,Topic 
+fqVMbuUU6UxMWPPW.txt - Topic ,Topic ,Topic 
+FQVp0TfUArszdvIr.txt - Topic ,Topic ,Topic 
+FQvuEqeK4YkPwARJ.txt - Topic ,Topic ,Topic 
+FQvye8tNFpEbNOng.txt - Topic ,Topic ,Topic 
+FQWAMKhKgutuKwDN.txt - Topic ,Topic ,Topic 
+FqWb59simoDvTi01.txt - Topic ,Topic ,Topic 
+fQWO6a4zWkiLY1ro.txt - Topic ,Topic ,Topic 
+FqwzM4ZMmE9BG3Zg.txt - Topic ,Topic ,Topic 
+fqxma153TZh1Pz8g.txt - Topic ,Topic ,Topic 
+Fqy7fclU16oCtx0x.txt - Topic ,Topic ,Topic 
+fqycp9lOmhAV422u.txt - Topic ,Topic ,Topic 
+fqygjCkbJ3bY21TP.txt - Topic ,Topic ,Topic 
+FQYJi6hhh4DoMZpV.txt - Topic ,Topic ,Topic 
+fQZ8ysVzDjjgZbJJ.txt - Topic ,Topic ,Topic 
+fr2Aug40bR9rwvme.txt - Topic ,Topic ,Topic 
+fr2TEI6nJIyVYqdr.txt - Topic ,Topic ,Topic 
+Fr2vROHZoemsMTN1.txt - Topic ,Topic ,Topic 
+fr4PsMduE6k62AOm.txt - Topic ,Topic ,Topic 
+fR6DLkaWfAT6YWil.txt - Topic ,Topic ,Topic 
+fr6PWaIjYAmtIBAw.txt - Topic ,Topic ,Topic 
+fr6PxAd1HgqG2iuK.txt - Topic ,Topic ,Topic 
+Fr7Aq111wkIM8Hsj.txt - Topic ,Topic ,Topic 
+fr7KrwDgI50sFdCt.txt - Topic ,Topic ,Topic 
+fR8JJnOPxgAVd9Gy.txt - Topic ,Topic ,Topic 
+fR8xxvofcbeQkDRF.txt - Topic ,Topic ,Topic 
+fr9TMPDX8oal4nzE.txt - Topic ,Topic ,Topic 
+fR9WcKogDjvZ9nwY.txt - Topic ,Topic ,Topic 
+fRA7TKYiXKiLS8uJ.txt - Topic ,Topic ,Topic 
+fraglE0va6B3zUwB.txt - Topic ,Topic ,Topic 
+FrBItzqHjTU0YKUi.txt - Topic ,Topic ,Topic 
+FrBxNiIOJ3t1XHBM.txt - Topic ,Topic ,Topic 
+frc5L98QSDfKvoeB.txt - Topic ,Topic ,Topic 
+FRCtF2mGPLE3HWTj.txt - Topic ,Topic ,Topic 
+FrecO0ulAFiRK9Hc.txt - Topic ,Topic ,Topic 
+frEqbF4JlWgs0dqv.txt - Topic ,Topic ,Topic 
+frF8jY7XwXcgRAv4.txt - Topic ,Topic ,Topic 
+FRfHztETHo8HzyGn.txt - Topic ,Topic ,Topic 
+FRfotkUMZvT8blrD.txt - Topic ,Topic ,Topic 
+FrfW2emafod6rvyt.txt - Topic ,Topic ,Topic 
+fRG5c9LAEpvTMEKN.txt - Topic ,Topic ,Topic 
+fRhMRe2SpHMrgJ8h.txt - Topic ,Topic ,Topic 
+fRhs8A65rLychDEF.txt - Topic ,Topic ,Topic 
+FrhSMjLh92bjEvYb.txt - Topic ,Topic ,Topic 
+FrI84HxaDSHxi58E.txt - Topic ,Topic ,Topic 
+frIA1DzCxmIqTaMd.txt - Topic ,Topic ,Topic 
+FRibFA5IDeHHQkli.txt - Topic ,Topic ,Topic 
+frIcTE9d3Ey5nOUz.txt - Topic ,Topic ,Topic 
+FrIdmcI0J1Xtf2ec.txt - Topic ,Topic ,Topic 
+fRidQDeBWi2dS1UC.txt - Topic ,Topic ,Topic 
+FRiocLgPRRnpihGY.txt - Topic ,Topic ,Topic 
+fripC9SMvRR3ZN8n.txt - Topic ,Topic ,Topic 
+FRIRMD6yX8nWsFGj.txt - Topic ,Topic ,Topic 
+friYpvZ2FRwxyp8Q.txt - Topic ,Topic ,Topic 
+FrjEAGwfV6qohKmJ.txt - Topic ,Topic ,Topic 
+frjOxeLdS4AODM6r.txt - Topic ,Topic ,Topic 
+frk4VVfLgnsIeuzH.txt - Topic ,Topic ,Topic 
+frk5lnxpV7TUSDvM.txt - Topic ,Topic ,Topic 
+FRkBH8N5HiBh3ztm.txt - Topic ,Topic ,Topic 
+FRKEVtGCnw4V5n6j.txt - Topic ,Topic ,Topic 
+FrkEXzJ1gArsyeZC.txt - Topic ,Topic ,Topic 
+FRkT9dF9nZILY8HX.txt - Topic ,Topic ,Topic 
+FrKuNE7GnEELT7Am.txt - Topic ,Topic ,Topic 
+FrkZVimXjeSbMoJr.txt - Topic ,Topic ,Topic 
+FRLInDVOvMBoLymg.txt - Topic ,Topic ,Topic 
+FRm4B4np82bZilFI.txt - Topic ,Topic ,Topic 
+frm5S9vIhv1vjpQv.txt - Topic ,Topic ,Topic 
+frMavdeEyegQ8Tuq.txt - Topic ,Topic ,Topic 
+fRmBbN87AxO2z3dU.txt - Topic ,Topic ,Topic 
+fRMJgtiXyl81FQGA.txt - Topic ,Topic ,Topic 
+frmZ56l00vaCklt6.txt - Topic ,Topic ,Topic 
+fRn1KwJmFM1ohKnN.txt - Topic ,Topic ,Topic 
+Frn8gfVtlY8LjHcf.txt - Topic ,Topic ,Topic 
+fRNDGc3ymRc9lMff.txt - Topic ,Topic ,Topic 
+fRNESz7CwtzIGozb.txt - Topic ,Topic ,Topic 
+fRNhVazbkPYbZTjd.txt - Topic ,Topic ,Topic 
+frNPhZRw57S4v1o6.txt - Topic ,Topic ,Topic 
+FrOhNhSr4XuqBCsJ.txt - Topic ,Topic ,Topic 
+frOTLhzRzbtPEAl3.txt - Topic ,Topic ,Topic 
+fROZ0CDPy88xdVVk.txt - Topic ,Topic ,Topic 
+FrpNVooPBxIRnLU4.txt - Topic ,Topic ,Topic 
+fRpUiGgHpcgX52Np.txt - Topic ,Topic ,Topic 
+FRpuZBu0RDxKuXoG.txt - Topic ,Topic ,Topic 
+frQ1oOCfhsYVuNYO.txt - Topic ,Topic ,Topic 
+FRQ4h3asJqjSx6oE.txt - Topic ,Topic ,Topic 
+frq98EFx5X71MDhJ.txt - Topic ,Topic ,Topic 
+FrQia139i1kvtgf3.txt - Topic ,Topic ,Topic 
+frQNxRCMug7ZPkMx.txt - Topic ,Topic ,Topic 
+FrQpwvVF1fwzNps7.txt - Topic ,Topic ,Topic 
+fRR3OPPk9zX36aI1.txt - Topic ,Topic ,Topic 
+fRrIhHRbewec0QCN.txt - Topic ,Topic ,Topic 
+FRrr6KWl3xXiyXVy.txt - Topic ,Topic ,Topic 
+fRRXy2hwX6SPbqFx.txt - Topic ,Topic ,Topic 
+frSRkpYb2enWFSIh.txt - Topic ,Topic ,Topic 
+FRt9EKId1w1xCbiu.txt - Topic ,Topic ,Topic 
+fRTc9jHd02dlwRmu.txt - Topic ,Topic ,Topic 
+fRtluSDqzvGapbjP.txt - Topic ,Topic ,Topic 
+frTn7ASCWEorSukQ.txt - Topic ,Topic ,Topic 
+FRTQ5RmzGCbYJ9qy.txt - Topic ,Topic ,Topic 
+FrUKWtLATLorBnGA.txt - Topic ,Topic ,Topic 
+FRvA0ym098h4hrQS.txt - Topic ,Topic ,Topic 
+FRVUbGb3gAWzOdlG.txt - Topic ,Topic ,Topic 
+fRwBu2FXsyZYAtSv.txt - Topic ,Topic ,Topic 
+fRWCPl11HoUGSAmV.txt - Topic ,Topic ,Topic 
+frWrCV62OGeNpmFR.txt - Topic ,Topic ,Topic 
+FrWV2ZZOphiephjr.txt - Topic ,Topic ,Topic 
+fRWY3rwzUjQK33rb.txt - Topic ,Topic ,Topic 
+FrwybpoI8vx86mW3.txt - Topic ,Topic ,Topic 
+FrXfs0AEo9YKBV17.txt - Topic ,Topic ,Topic 
+frxZfLSvKLVOa4iq.txt - Topic ,Topic ,Topic 
+Fry9YZegXnKZOGZo.txt - Topic ,Topic ,Topic 
+fRYgIKKk5R7kHUhb.txt - Topic ,Topic ,Topic 
+fRYQvj4DFnNxGVuv.txt - Topic ,Topic ,Topic 
+FRz7wSLK3WnTS83L.txt - Topic ,Topic ,Topic 
+FRZ9fHmhcCLYsZXD.txt - Topic ,Topic ,Topic 
+fRZaWVTM1NaubR5P.txt - Topic ,Topic ,Topic 
+FRzhAKYXAVptKhE3.txt - Topic ,Topic ,Topic 
+FrZlfVTUkC46W6js.txt - Topic ,Topic ,Topic 
+FS0d3Z7j7ANcZALC.txt - Topic ,Topic ,Topic 
+FS1nOFTDyeKkuqFT.txt - Topic ,Topic ,Topic 
+Fs2ACPPcrRwpofnW.txt - Topic ,Topic ,Topic 
+fs2iIILqLPUIgF3O.txt - Topic ,Topic ,Topic 
+fs3aGewYMyHq7SPD.txt - Topic ,Topic ,Topic 
+fS3WeUoqQCJuT4ES.txt - Topic ,Topic ,Topic 
+fS4U3cV6IT0aIBDi.txt - Topic ,Topic ,Topic 
+fs5bNUNfRbgx3DTZ.txt - Topic ,Topic ,Topic 
+fs6eBKiLoAwYH3Oi.txt - Topic ,Topic ,Topic 

@@ -14,13 +14,10 @@ from nltk.stem import WordNetLemmatizer
 import gensim
 
 
-def GetBigrams(sentences):
-  bigram=gensim.models.Phrases(sentences,min_count=5,threshold=100)
-  tokenized_sent=[]
-  [tokenized_sent.append(RegexTokenize(sentence)) for sentence in sentences]
-  song_words=[]
-  [song_words.extend(bigram[sentence]) for sentence in tokenized_sent]
-  return song_words
+def GetBigrams(all_sentences,min_count):
+  bigram=gensim.models.Phrases(all_sentences,min_count=min_count,threshold=5)
+  bigram_model=gensim.models.phrases.Phraser(bigram)
+  return bigram_model
 
 #Uses regular expression tokenizer to tokenize a song
 #@song is a string 
@@ -38,9 +35,7 @@ def NltkTokenize(song):
 def RemoveStopwords(song):
     stop_words = stopwords.words('english')
     #Stopwords list extended with words we've encountered in the files that don't have any meaning for the LDA model
-    stop_words.extend(['chorus','intro','outro','verse','ooh',"oooh","i'm","i'll","i've",
-                       "i'd","n't","'re","'ll","'ve","gon","wan","...","'em",
-                       "ooh-ooh","uh-uh","oh-oh","mmm",])
+    stop_words.extend(['ooh',"oooh","gon","wan","...","mmm","nanana","i'll"])
     cleaned_song = []
     #Words that are less than two characters long are removed to prevent meaningless words from affecting the model
     for word in song:
@@ -91,7 +86,7 @@ def RemoveNums(song):
 #returns empty list for songs that are less than @min_words long.
 def PreprocessDocs(song, min_words):
   #song=NltkTokenize(song)
-  song=GetBigrams(song)
+  song=RegexTokenize(song)
   song=RemoveEndline(song)
   song=CaseFold(song)
   song=Lemmatize(song)
@@ -106,15 +101,30 @@ def PreprocessDocs(song, min_words):
 #@folder_name is a string
 #@min_words is an integer
 #returns a list of lists where each list represents a song
-def ReadFolder(folder_name, min_words):
+def ReadFolder(folder_name, min_words,Bigrams):
   path=os.getcwd()+"/"+folder_name
-  file_data_list=[]
+  songs_list=[]
+  song_lines=[]
   for root, subdir, file_names in os.walk(path):
     for file in file_names:
       with open(os.path.join(root, file),'r',encoding='utf8') as file_data:
-        song=file_data.readlines()
-        song=PreprocessDocs(song,min_words)
-        if len(song)>0:
-          file_data_list.append(song)
-  return file_data_list
+        if Bigrams==True:
+          song=file_data.readlines()
+          song_bow=[]
+          for i in range(len(song)):
+            song[i]=PreprocessDocs(song[i],min_words)
+            song_bow.extend(song[i])
+          if len(song)>0:
+            song_lines.extend(song)
+            songs_list.append(song_bow)
+        else:
+          song=file_data.read()
+          song=PreprocessDocs(song,min_words)
+          if len(song)>0:
+            songs_list.append(song)
+  if(Bigrams==True):
+    bigram_model=GetBigrams(song_lines,10)
+    for i in range(len(songs_list)):
+        songs_list[i]=bigram_model[songs_list[i]]
+  return songs_list
 

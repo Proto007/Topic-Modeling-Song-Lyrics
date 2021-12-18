@@ -110,7 +110,8 @@ def GetPerplexityGraph(perplexity_list,max_topics):
   plt.savefig("Topic Perplexity.png")
   plt.show()
 
-def ReadTestData(data_type,folder_name):
+###########
+def ReadTestData(data_type,folder_name,Bigrams):
   directory=os.getcwd()+'/'+folder_name
   cwd=os.getcwd()
   os.chdir(directory)
@@ -128,7 +129,20 @@ def ReadTestData(data_type,folder_name):
   os.chdir(cwd)
   return songs_list,songs_name_list
 
-
+def GetTopicWordsCsv(lda_model,id2word,number_of_topics):
+  topics=[]
+  topic_words=[]
+  for i in range(number_of_topics):
+    topics.append("Topic "+str(i))
+    per_topic_words=lda_model.get_topic_terms(i,20)
+    words_list=[]
+    [words_list.append(id2word[word[0]]) for word in per_topic_words]
+    topic_words.append(words_list)
+  topics_data={"Topic":topics,"Words":topic_words}
+  topics_df=pd.DataFrame(topics_data)
+  topics_df.to_csv("topic_words.csv",index=False)
+    
+  
 def TestToCsv(lda_model,corpus,model_id2word,songs_list,songs_name_list,num_of_topics,file_name):
   all_topics=[]
   for i in range(num_of_topics):
@@ -137,23 +151,21 @@ def TestToCsv(lda_model,corpus,model_id2word,songs_list,songs_name_list,num_of_t
     for i in range(num_of_topics):
       all_topics[i].append(round(data[i][1],5))
   dominant_topics=[]
-  dominant_topic_words=[]
   for i in range(len(songs_list)):
-    highest_prob=0.0
-    highest_index=0
+    topics_prob=[]
     for j in range(len(all_topics)):
-      if(all_topics[j][i]>highest_prob):
-        highest_prob=all_topics[j][i]
-        highest_index=j
-    topic_words=lda_model.get_topic_terms(highest_index,20);
-    dominant_topic_words.append([model_id2word[word[0]] for word in topic_words])
-    dominant_topics.append("Topic "+str(highest_index))
-  df_data={"File Name":songs_name_list, "Bag Of Words":songs_list,"Dominant Topic":dominant_topics,"Dominant Topic Words":dominant_topic_words}
+      topics_prob.append(all_topics[j][i])
+      sorted_prob=topics_prob.sort()
+      dom1=topics_prob.index(sorted_prob[0])
+      dom2=topics_prob.index(sorted_prob[1])
+      dom3=topics_prob.index(sorted_prob[2])
+    dominant_topics.append("Topic "+str(dom1)+",Topic "+str(dom2)+",Topic "+str(dom3))
+  df_data={"File Name":songs_name_list, "Bag Of Words":songs_list,"Dominant Topics":dominant_topics}
   for i in range(num_of_topics):
     df_data["Topic "+str(i)]=all_topics[i]
   topics_df=pd.DataFrame(df_data)
   pprint(topics_df)
-  topics_df.to_csv(os.getcwd()+"/"+file_name,index=False)
+  topics_df.to_csv(file_name,index=False)
 
 def GetTestInfo(file_name, num_of_topics,lda_model,model_id2word):
   df=pd.read_csv(file_name)
