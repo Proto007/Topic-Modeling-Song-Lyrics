@@ -64,13 +64,16 @@ def LoadDictionary():
 #@bigrams_min_count is an integer that decides the min_count for bigrams
 #returns an LDA model with @num_of_topics topics
 def MakeLdaModel(corpora_folder,is_saved,num_of_topics,min_words,filter_words,bigrams,bigrams_min_count):
+  #If @is_saved is true, load dictionary and corpus from disk
   if(is_saved):
     id2word=LoadDictionary()
     corpus=LoadCorpus()
+  #Create songs_list, id2word and corpus if @is_saved is false
   else:
-    songs_list=dp.ReadFolder(corpora_folder,min_words,bigrams,bigrams_min_count)
+    songs_list=dp.ReadFolder(corpora_folder,min_words,bigrams,corpora_folder,bigrams_min_count)
     id2word=GetDictionary(songs_list,filter_words,True)
     corpus=GetCorpus(id2word,songs_list,True)    
+  #LDA model is created
   lda_model = ldamodel.LdaModel( corpus = corpus, id2word = id2word,
                                  num_topics = num_of_topics, random_state = 100,
                                  update_every = 1, passes = 10,

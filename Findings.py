@@ -161,24 +161,20 @@ def GetTopicWordsCsv(lda_model,id2word,number_of_topics):
 #Reads songs from "current_working_directory/Test Folder/@data_type"
 #This function is made specifically for test data
 #@data_type is a string
-#@bigrams is a bool which decides whether or not the data is read as bigrams
+#@bigrams is a bool which decides whether or not the data is read as bigrams from @bigrams_folder
+#@bigrams_folder is a bool
 #returns a list of lists where each sublist is a bag of words representation for a song
 #returns a list of the strings with names of files read
-def ReadTestData(data_type,bigrams):
-  directory=os.getcwd()+'/'+"Test Folder"
-  cwd=os.getcwd()
-  os.chdir(directory)
+def ReadTestData(data_type, bigrams, bigrams_folder):
   path=os.getcwd()+"/"+data_type
-  songs_list=dp.ReadFolder(data_type,1,bigrams,5)
+  songs_list=dp.ReadFolder(data_type,1,bigrams,bigrams_folder,20)
   songs_name_list=[]
   for root, subdir, file_names in os.walk(path):
     for file in file_names:
       songs_name_list.append(str(file))
-  os.chdir(cwd)
   return songs_list,songs_name_list
 
-####
-#Gets dominant topics of each song in @songs_list using provided @lda_model of @num_of_topics topics
+#Gets three dominant topics of each song in @songs_list using provided @lda_model of @num_of_topics topics
 #@lda_model is an lda model
 #@songs_list is a list of lists where each sublist is a bag of words for a song
 #@songs_name_list is a list of strings with file names for the test data
@@ -213,7 +209,7 @@ def TestToCsv(lda_model, corpus, songs_list,songs_name_list,num_of_topics,file_n
 #Creates a CSV with the ratio of each topic found in test data
 #@file_name is a string with name of the csv file which has information about topics for test songs
 #@num_of_topics is the number of topics in @lda_model
-#@id2word is the dictionary used to build @lda_model
+#@model_id2word is the dictionary used to build @lda_model
 #returns a pandas dataframe with the ratio information
 #saves a csv named "test_topic_ratio_data.csv" in current_working_directory
 def GetTestInfo(file_name, num_of_topics,lda_model,model_id2word, save_name):

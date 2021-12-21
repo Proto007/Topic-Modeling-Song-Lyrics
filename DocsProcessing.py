@@ -13,15 +13,28 @@ import re
 from nltk.stem import WordNetLemmatizer
 import gensim
 
-#Takes a list of strings and returns a bigram model for those strings using Gensim's Phrases 
-#@all_sentences is a list of strings where each string is a line
+#Takes the name of a directory and returns a bigram model for files in that directory using Gensim's Phrases 
+#@data_folder is a string with name of a directory
 #@min_count is an integer that decides how many times a bigram needs to happen for it to be considered
+#@threshold is an integer which controls the frequency of bigrams
+#higher threshold results in less bigrams
 #returns a bigram_model
-def GetBigrams(all_sentences,min_count):
-  bigram=gensim.models.Phrases(all_sentences,min_count=min_count,threshold=10)
+def MakeBigramModel(data_folder,min_count,threshold):
+  #Read all lines from the text files in @data_folder
+  model_lines=[]
+  for root, subdir, file_names in os.walk(os.getcwd()+"/"+data_folder):
+    for file in file_names:
+      with open(os.path.join(root, file),'r',encoding='utf8') as file_data:
+        lines=file_data.readlines()
+        for i in range(len(lines)):
+          lines[i]=PreprocessDocs(lines[i],1)
+        if len(lines)>0:
+          model_lines.extend(lines)
+  #Trains a bigram model based on the lines read, @min_count, @threshold
+  bigram=gensim.models.Phrases(model_lines,min_count=min_count,threshold=threshold)
   bigram_model=gensim.models.phrases.Phraser(bigram)
   return bigram_model
-
+          
 #Uses regular expression tokenizer to tokenize a song
 #@song is a string 
 #returns a list of strings with the @song tokenized into words. Counts words with " ' "
@@ -106,31 +119,24 @@ def PreprocessDocs(song, min_words):
 #Gets rid of songs that are less than @min_words long.
 #@folder_name is a string
 #@min_words is an integer
-#@bigrams is a bool that decides whether or not the songs will be read as bigrams with min_count 10
+#@bigrams is a bool that decides whether or not the songs will be read as bigrams built from @bigrams_folder and @min_count
+#threshold for the bigram is set to 10 by default
+#@bigrams_folder is a string and @min_count is an integer
 #returns a list of lists where each sublist represents a song
-def ReadFolder(folder_name, min_words,bigrams,bigrams_min_count):
+def ReadFolder(folder_name, min_words,bigrams,bigrams_folder, bigrams_min_count):
+  #Read songs that are in @folder_name and apply PreprocessDocs() on each song
   path=os.getcwd()+"/"+folder_name
   songs_list=[]
-  song_lines=[]
   for root, subdir, file_names in os.walk(path):
     for file in file_names:
       with open(os.path.join(root, file),'r',encoding='utf8') as file_data:
-        if bigrams==True:
-          song=file_data.readlines()
-          song_bow=[]
-          for i in range(len(song)):
-            song[i]=PreprocessDocs(song[i],1)
-            song_bow.extend(song[i])
-          if len(song)>0:
-            song_lines.extend(song)
-            songs_list.append(song_bow)
-        else:
-          song=file_data.read()
-          song=PreprocessDocs(song,min_words)
-          if len(song)>0:
-            songs_list.append(song)
+        song=file_data.read()
+        song=PreprocessDocs(song,min_words)
+        if len(song)>0:
+          songs_list.append(song)
+  #If bigrams is true, create a bigrams model from @bigrams_folder using @min_count 
   if(bigrams==True):
-    bigram_model=GetBigrams(song_lines,bigrams_min_count)
+    bigram_model=MakeBigramModel(bigrams_folder,bigrams_min_count,10)
     for i in range(len(songs_list)):
         songs_list[i]=bigram_model[songs_list[i]]
   return songs_list
