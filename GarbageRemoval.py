@@ -6,16 +6,6 @@ import os
 import string
 from langdetect import detect    
 
-#Calls removeGarbageFromText function on all text files in curr_working_directory\folder_name
-#@folder_name is a string
-def RemoveGarbageFromFolder(folder_name):
-    file_path=os.getcwd()+"/"+folder_name
-    removed_count=0
-    for root, subdir, file_names in os.walk(file_path):
-        for file in file_names:
-            RemoveGarbageFromText(os.path.join(root, file))
-            removed_count+=1
-    print("Fixed",removed_count,"files.")
 
 #Removes empty sub folders in curr_working_directory\folder_name
 #@folder_name is a string
@@ -75,7 +65,6 @@ def RemoveLanguageExcept(folder_name,language):
 
 #Calls the functions implemented in this file on current_working_directory/folder_name
 #@folder_name is a string
-#fixes the last line only if bool parameter @genius is true.
 #@language is the language the user wants to keep in the corpora
 def FixFolder(folder_name,language):
     RemoveEmptyFiles(folder_name)

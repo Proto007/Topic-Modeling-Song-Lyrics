@@ -13,19 +13,25 @@ import re
 from nltk.stem import WordNetLemmatizer
 import gensim
 
-
+#Takes a list of strings and returns a bigram model for those strings using Gensim's Phrases 
+#@all_sentences is a list of strings where each string is a line
+#@min_count is an integer that decides how many times a bigram needs to happen for it to be considered
+#returns a bigram_model
 def GetBigrams(all_sentences,min_count):
-  bigram=gensim.models.Phrases(all_sentences,min_count=min_count,threshold=5)
+  bigram=gensim.models.Phrases(all_sentences,min_count=min_count,threshold=10)
   bigram_model=gensim.models.phrases.Phraser(bigram)
   return bigram_model
 
 #Uses regular expression tokenizer to tokenize a song
 #@song is a string 
-#returns a list of strings with the @song tokenized into words
+#returns a list of strings with the @song tokenized into words. Counts words with " ' "
 def RegexTokenize(song):
   tokenizer=RegexpTokenizer( '\w+[\']?\w*|[^\W\s]+', gaps = False )
   return tokenizer.tokenize(song)
 
+#Tokenizes a song using NLTK's word_tokenize
+#@song is a string
+#returns a list of strings with @song tokenized into words
 def NltkTokenize(song):
   return word_tokenize(song)
 
@@ -35,7 +41,7 @@ def NltkTokenize(song):
 def RemoveStopwords(song):
     stop_words = stopwords.words('english')
     #Stopwords list extended with words we've encountered in the files that don't have any meaning for the LDA model
-    stop_words.extend(['ooh',"oooh","gon","wan","...","mmm","nanana","i'll"])
+    stop_words.extend(['ooh',"oooh","gon","wan","...","mmm","nanana"])
     cleaned_song = []
     #Words that are less than two characters long are removed to prevent meaningless words from affecting the model
     for word in song:
@@ -82,7 +88,7 @@ def RemoveNums(song):
 #Calls functions defined in this file on one song to get the corpus ready for LDA Model
 #@song is a string with one song
 #@min_words is an integer
-#returns a list of strings with the song(tokenized, no endline chars, no stopwords, no numbers, all lower case)
+#returns a list of strings with the song(tokenized, no endline chars, no stopwords, no numbers, all lower case, lemmatized)
 #returns empty list for songs that are less than @min_words long.
 def PreprocessDocs(song, min_words):
   #song=NltkTokenize(song)
@@ -100,19 +106,20 @@ def PreprocessDocs(song, min_words):
 #Gets rid of songs that are less than @min_words long.
 #@folder_name is a string
 #@min_words is an integer
-#returns a list of lists where each list represents a song
-def ReadFolder(folder_name, min_words,Bigrams):
+#@bigrams is a bool that decides whether or not the songs will be read as bigrams with min_count 10
+#returns a list of lists where each sublist represents a song
+def ReadFolder(folder_name, min_words,bigrams,bigrams_min_count):
   path=os.getcwd()+"/"+folder_name
   songs_list=[]
   song_lines=[]
   for root, subdir, file_names in os.walk(path):
     for file in file_names:
       with open(os.path.join(root, file),'r',encoding='utf8') as file_data:
-        if Bigrams==True:
+        if bigrams==True:
           song=file_data.readlines()
           song_bow=[]
           for i in range(len(song)):
-            song[i]=PreprocessDocs(song[i],min_words)
+            song[i]=PreprocessDocs(song[i],1)
             song_bow.extend(song[i])
           if len(song)>0:
             song_lines.extend(song)
@@ -122,8 +129,8 @@ def ReadFolder(folder_name, min_words,Bigrams):
           song=PreprocessDocs(song,min_words)
           if len(song)>0:
             songs_list.append(song)
-  if(Bigrams==True):
-    bigram_model=GetBigrams(song_lines,10)
+  if(bigrams==True):
+    bigram_model=GetBigrams(song_lines,bigrams_min_count)
     for i in range(len(songs_list)):
         songs_list[i]=bigram_model[songs_list[i]]
   return songs_list
